@@ -45,7 +45,7 @@ flowchart TD
 
     subgraph Infra["AWS Infra (Terraform)"]
         C1[VPC + Subnets]
-        C2[EC2 (Backend)]
+        C2[EC2 Backend]
         C3[ALB + Auto Scaling]
         C4[S3 Static Hosting]
     end
@@ -56,3 +56,4 @@ flowchart TD
     Backend --> B4
     Backend --> B5
     Infra --> Backend
+
