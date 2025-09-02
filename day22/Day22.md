@@ -30,12 +30,12 @@ The app integrates **weather data, notifications, and geofencing** to prevent cl
 ## Architecture
 ```mermaid
 flowchart TD
-    subgraph App["📱 Mobile/Web App"]
+    subgraph App["Mobile/Web App"]
         A1[React Frontend]
         A2[API Requests]
     end
 
-    subgraph Backend["⚙️ Backend"]
+    subgraph Backend["Backend"]
         B1[API Gateway]
         B2[Lambda - Weather API Fetch]
         B3[RDS - Reminders DB]
@@ -43,7 +43,7 @@ flowchart TD
         B5[Amazon Location Service]
     end
 
-    subgraph Infra["☁️ AWS Infra (Terraform)"]
+    subgraph Infra["AWS Infra (Terraform)"]
         C1[VPC + Subnets]
         C2[EC2 (Backend)]
         C3[ALB + Auto Scaling]
